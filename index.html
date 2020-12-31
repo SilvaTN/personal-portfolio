@@ -1,10 +1,13 @@
 
-<!-- possible ideas:
-** do a portfolio as if you were a character from a story or a famous historical figure. 
-** a portofolio of projects you failed/gave up on.
-** a portfolio for God. E.g. in the work section, it includes creating planet earth, also it includes hobbies like web design and painting (which are very bad). Talk about how God has a plan that no one understands.
-** a caveman portfolio. Includes discovering fire, creating the wheel, cave art, coconut ball (football but with coconut), music (link to filthy frank caveman song).
--->
+<!-- add an icon on the tab (ie where it says the page name on the window) of each of your pages. Eg for the pure guava page, add a guava image. -->
+
+<!-- also remember not to try making it perfect. You are still a begginer, so if it's taking too long to make something centered, for example, just use padding instead of the proper way. -->
+
+
+
+
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,13 +15,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" href="https://lh3.googleusercontent.com/proxy/s9jd18VBNKw8f-xHCie9Ch82ksaDQLK3vt4lS-xBUru3eRBRe25AxWbkeCsqNh-BxKg2Y7E9wgMKoV10SpaW2bZjY5WmBB8">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <nav id="navbar">
+        <a href="#welcome-section">Hello</a>
         <a href="#projects">Work</a>
         <a href="#profile-section">Profile</a>
-        <a href="#contact-section">Contact</a>
     </nav>
     <section id="welcome-section">
         <h1>I do business.</h1>
@@ -27,46 +31,66 @@
         <h2>My Projects</h2>
         <figure class="project-tile" id="python-doc">
             <a href="https://silvatn.github.io/pythondocumentation/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png" alt="python documentation page screenshot"></a>
-            <figcaption>python documentation page screenshot</figcaption>
+            <figcaption>Python documentation</figcaption>
         </figure>
         <figure class="project-tile" id="guava-product">
-            <a href="https://codepen.io/numberonecoder/full/PoGmQGO" target="_blank"><img src="https://e.snmc.io/i/600/w/f0a11ba293a396605d119c84f5682a8c/2682384" alt="guava product landing page screenshot"></a>
-            <figcaption>Guava product landing page</figcaption>
+            <a href="https://silvatn.github.io/pure-guava/" target="_blank"><img src="images/pureGuavaScreenshot.png" alt="guava product landing page screenshot"></a>
+            <figcaption>Pure guava products</figcaption>
         </figure>
         <figure class="project-tile">
-            <a href="https://www.google.com/" target="_blank"><img src="https://cdn57.androidauthority.net/wp-content/uploads/2017/11/Google-search-curved-840x446.png" alt="guava product landing page screenshot"></a>
-            <figcaption>I created Google</figcaption>
+            <a href="https://silvatn.github.io/surveys-survey-form/" target="_blank"><img src="images/surveyScrceenshot.png" alt="guava product landing page screenshot"></a>
+            <figcaption>Tribute page</figcaption>
         </figure>
         <figure class="project-tile">
-            <a href="https://www.facebook.com/" target="_blank"><img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="guava product landing page screenshot"></a>
-            <figcaption>I did facebook</figcaption>
+            <a href="https://www.facebook.com/" target="_blank"><img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="a screenshot of this very same page."></a>
+            <figcaption>Personal Portfolio</figcaption>
         </figure>
         <figure class="project-tile">
-            <a href="https://www.mozilla.org/en-US/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/1200px-Firefox_logo%2C_2019.svg.png" alt="guava product landing page screenshot"></a>
-            <figcaption>I made firefox</figcaption>
+            <a href="https://soundcloud.com/partlytangible" target="_blank"><img src="https://cdn2.iconfinder.com/data/icons/minimalism/512/soundcloud.png" alt="soundcloud logo, the cloud thingy."></a>
+            <figcaption>My music (listen at your own risk)</figcaption>
         </figure>
-        <figure class="project-tile">
-            <a href="https://www.instagram.com/" target="_blank"><img src="https://i.pinimg.com/originals/72/a3/d9/72a3d9408d41335f39e9f014dc35cf44.jpg" alt="guava product landing page screenshot"></a>
-            <figcaption>I executed instagram</figcaption>
+        <figure class="project-tile" id="empty-cell">
+            <figcaption>I wanted to have at least 6 cells on my grid.</figcaption>
         </figure>
     </section>
     <section id="profile-section">
-        <figure>
-            <a href="https://www.freecodecamp.org/kind_coder" id="profile-link" target="_blank"><img src="https://design-style-guide.freecodecamp.org/downloads/fcc_secondary_small.png" alt="free code camp logo" style="height: 40px;">
-            <figcaption>FCC profile</figcaption></a>
-        </figure>
-        <figure>
-            <a href="https://github.com/SilvaTN" id="profile-link-2" target="_blank"><img src="https://image.flaticon.com/icons/png/512/25/25231.png" alt="github logo" style="height: 40px;">
-            <figcaption>Github profile</figcaption></a>
-        </figure>
-        <figure>
-            <img src="https://lh3.googleusercontent.com/proxy/6PkSX_jjzmZ5YIoxwJdHMCCjCnaOfEUDsJETbTHigijPjDWPrjo2I8z2fKgYva9Bjm87zZMd_xWyEtT2_DO2MUR_74pm1R28CxxkRm5PiOgJ4qUnYDc2P83Pki4kd0wtv8j5ibbo9M5T2ZVhIdLl0RE" alt="silhouette profile" style="height: 40px;">
-            <figcaption>silhouette profile</figcaption>
-        </figure>
+        <div>
+            <a href="https://www.freecodecamp.org/kind_coder" id="profile-link" target="_blank"><img src="https://design-style-guide.freecodecamp.org/downloads/fcc_secondary_small.png" alt="free code camp logo"><h3>Free Code Camp</h3></a>
+        </div>
+        <div>
+            <a href="https://github.com/SilvaTN" id="profile-link-2" target="_blank"><img src="https://image.flaticon.com/icons/png/512/25/25231.png" alt="github logo"><h3>Github</h3></a>
+        </div>
+        <div>
+            <a href="https://soundcloud.com/partlytangible" target="_blank"><img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c537.png" alt="soundcloud logo"><h3>Soundcloud</h3></a>
+        </div>
     </section>
-    <section id="contact-section">
-        <h3>So, you wanna contact me?</h3>
-        <p>Okay: [insert email]</p>
+
+    <section id="profile-section-2">
+        <a href="https://www.freecodecamp.org/kind_coder" target="_blank" id="profile-link"><div class="container">
+            <div class="img-col">
+                <img src="images/fcc_logo.png" alt="free code camp logo">
+            </div>
+            <div class="text-col">
+                <h1>I am a deer</h1>
+            </div>
+        </div></a>
+        <a href="https://github.com/SilvaTN" id="profile-link-2" target="_blank"><div class="container">
+            <div class="img-col">
+                <img src="images/github_logo.png" alt="github logo">
+            </div>
+            <div class="text-col">
+                <h1>I am a deer</h1>
+            </div>
+        </div></a>
+        <a href="https://www.freecodecamp.org/kind_coder" target="_blank" id="profile-link"><div class="container">
+            <div class="img-col">
+                <img src="images/soundcloud_logo.png" alt="soundcloud logo">
+            </div>
+            <div class="text-col">
+                <h1>I am a deer</h1>
+            </div>
+        </div></a>
+
     </section>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
