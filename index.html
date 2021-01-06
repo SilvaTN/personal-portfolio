@@ -1,8 +1,29 @@
 
+
+
+
+<!-- **************** READ ALL OF THESE COMMENTS !!!!! ****************** -->
+
+
+<!-- write in third person, saying how you are amazing. -->
+
 <!-- add an icon on the tab (ie where it says the page name on the window) of each of your pages. Eg for the pure guava page, add a guava image. -->
 
 <!-- also remember not to try making it perfect. You are still a begginer, so if it's taking too long to make something centered, for example, just use padding instead of the proper way. -->
 
+
+<!-- below the Hire me and the Lower me buttons, have a "higher mi" button that plays a higher E every time you click on it (until it gets to the limit, then it restarts) -->
+
+<!-- look at a website for reference and try to recreate it. -->
+
+<!-- lower button pressed (if it's not pressed within 10 seconds, it goes back to state 1):
+1st time: goes down and now says higher me
+2nd time: goes up and now says 'lower me' again
+3rd time: goes down and now says, 'okay, it's getting kind of annoying'
+4th time: stays down and now sasy, "stop it >:( "
+5th time: you lost your button privilledge
+a few seconds later a new button appears below it, saying "replacement button". when you press it, it, the original button says, "what's that new button doing?" When you press the replacement again, the original says, "Hey pal, I'm teaching this person a lesson. Buttons do very important work and we need to be respected." And the replacement says, "but we must abide by the button code. It doesn't matter how many times we are pushed-- what matters is that we're here to be pushed when we are needed." The other button says, "wow" then :') then "that's beautiful. Did you just come up with that?" and the replacement says, "...It's an adapted quote from Toy Story" and the original says, "Well, it's beautiful anyway. Thank you for reminding me why I became a button." Then the other button says, "Wait...you BECAME a button? What were you before?" and the original replies, "I was a wizard" and the replacement says, "And you gave up your magic to become a button?" and the original says, "I'm still magic." and the replacement says, "Then...could you turn ME into a witch?" and the original slowly goes "......." then says, "It's done! But you must be pushed one final time" then replacement button changes to "push me to turn me into a wizard" and if you push it, the replacement button disappears. Then a few seconds later, the original says, "Okay...not even a thank you? This is why I gave up my previous life..." And then the button becomes a button again that goes down and up no matter how many times you press it, except that every third time, the button message changes to "it is an honour and a privilledge to be pushed".
+ -->
 
 
 
@@ -17,6 +38,9 @@
     <title>Document</title>
     <link rel="icon" href="https://lh3.googleusercontent.com/proxy/s9jd18VBNKw8f-xHCie9Ch82ksaDQLK3vt4lS-xBUru3eRBRe25AxWbkeCsqNh-BxKg2Y7E9wgMKoV10SpaW2bZjY5WmBB8">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Delius&family=Pangolin&family=Patrick+Hand&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <nav id="navbar">
@@ -25,69 +49,57 @@
         <a href="#profile-section">Profile</a>
     </nav>
     <section id="welcome-section">
-        <h1>I do business.</h1>
+        <h1>I do things.</h1>
     </section>
     <section id="projects">
-        <h2>My Projects</h2>
-        <figure class="project-tile" id="python-doc">
-            <a href="https://silvatn.github.io/pythondocumentation/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png" alt="python documentation page screenshot"></a>
-            <figcaption>Python documentation</figcaption>
-        </figure>
-        <figure class="project-tile" id="guava-product">
-            <a href="https://silvatn.github.io/pure-guava/" target="_blank"><img src="images/pureGuavaScreenshot.png" alt="guava product landing page screenshot"></a>
-            <figcaption>Pure guava products</figcaption>
-        </figure>
-        <figure class="project-tile">
-            <a href="https://silvatn.github.io/surveys-survey-form/" target="_blank"><img src="images/surveyScrceenshot.png" alt="guava product landing page screenshot"></a>
-            <figcaption>Tribute page</figcaption>
-        </figure>
-        <figure class="project-tile">
-            <a href="https://www.facebook.com/" target="_blank"><img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="a screenshot of this very same page."></a>
-            <figcaption>Personal Portfolio</figcaption>
-        </figure>
-        <figure class="project-tile">
-            <a href="https://soundcloud.com/partlytangible" target="_blank"><img src="https://cdn2.iconfinder.com/data/icons/minimalism/512/soundcloud.png" alt="soundcloud logo, the cloud thingy."></a>
-            <figcaption>My music (listen at your own risk)</figcaption>
-        </figure>
-        <figure class="project-tile" id="empty-cell">
-            <figcaption>I wanted to have at least 6 cells on my grid.</figcaption>
-        </figure>
-    </section>
-    <section id="profile-section">
-        <div>
-            <a href="https://www.freecodecamp.org/kind_coder" id="profile-link" target="_blank"><img src="https://design-style-guide.freecodecamp.org/downloads/fcc_secondary_small.png" alt="free code camp logo"><h3>Free Code Camp</h3></a>
+        <div class="heading"><h2>My Projects</h2></div>
+        
+        <div id="projects-grid">
+            <a href="https://silvatn.github.io/pythondocumentation/" target="_blank" class="project-tile">
+               <img class="project-screenshot" src="images/pythonDocScreendump.png" alt="python documentation page screenshot"><p>python documentation</p>
+            </a> 
+            <a href="https://silvatn.github.io/pure-guava/" target="_blank" class="project-tile">
+                <img src="images/pureGuavaScreenshot.png" alt="my guava product landing page screenshot"><p>Pure Guava Products</p>
+            </a>
+            <a href="https://silvatn.github.io/our-fascinating-planet-tribute/index.html" target="_blank" class="project-tile">
+                <img src="images/tributeToOurFascinatingPlanet.png" alt="screenshot of my tribute page to our world"><p>Our Fascinating World</p>
+            </a>
+            <a href="https://silvatn.github.io/surveys-survey-form/" target="_blank" class="project-tile">
+                <img class="project-screenshot" src="images/surveyScrceenshot.png" alt="my survey page screenshot"><p>Survey</p>
+            </a> 
+            <a href="index.html" target="_blank" class="project-tile">
+                <img class="project-screenshot" src="images/mirror.jpg" alt="a screenshot of this very same page."><p>Portfolio Page</p>
+            </a> 
+            <a href="https://soundcloud.com/partlytangible" target="_blank" class="project-tile">
+                <img class="project-screenshot" src="images/cloud.jpg" alt="SoundCloud logo, the cloud thingy." id="soundcloud-img"><p>Music</p>
+            </a> 
         </div>
-        <div>
-            <a href="https://github.com/SilvaTN" id="profile-link-2" target="_blank"><img src="https://image.flaticon.com/icons/png/512/25/25231.png" alt="github logo"><h3>Github</h3></a>
-        </div>
-        <div>
-            <a href="https://soundcloud.com/partlytangible" target="_blank"><img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c537.png" alt="soundcloud logo"><h3>Soundcloud</h3></a>
-        </div>
+
     </section>
 
     <section id="profile-section-2">
-        <a href="https://www.freecodecamp.org/kind_coder" target="_blank" id="profile-link"><div class="container">
+        <a href="https://www.freecodecamp.org/kind_coder" target="_blank" id="profile-link"><div class="profile-container">
             <div class="img-col">
-                <img src="images/fcc_logo.png" alt="free code camp logo">
+                <img src="images/fcc_logo.png" alt="free code camp logo" id="fcc-logo">
             </div>
             <div class="text-col">
-                <h1>I am a deer</h1>
+                <h1>freeCodeCamp</h1>
             </div>
         </div></a>
-        <a href="https://github.com/SilvaTN" id="profile-link-2" target="_blank"><div class="container">
+        <a href="https://github.com/SilvaTN" id="profile-link-2" target="_blank"><div class="profile-container">
             <div class="img-col">
-                <img src="images/github_logo.png" alt="github logo">
+                <img src="images/github_logo.png" alt="github logo" id="github-logo">
             </div>
             <div class="text-col">
-                <h1>I am a deer</h1>
+                <h1>Github</h1>
             </div>
         </div></a>
-        <a href="https://www.freecodecamp.org/kind_coder" target="_blank" id="profile-link"><div class="container">
+        <a href="https://www.freecodecamp.org/kind_coder" target="_blank" id="profile-link"><div class="profile-container">
             <div class="img-col">
-                <img src="images/soundcloud_logo.png" alt="soundcloud logo">
+                <img src="images/soundcloud_logo.png" alt="soundcloud logo" id="soundcloud-logo">
             </div>
             <div class="text-col">
-                <h1>I am a deer</h1>
+                <h1>SoundCloud</h1>
             </div>
         </div></a>
 
