@@ -151,7 +151,7 @@ p {
 /* NB: PROFILE NOT PROJECT */
 
 
-#profile-section-2 {
+#profile-section {
     background-color: var(--contact-section-bg);
     /* height: 50vh; */
     display: grid;
