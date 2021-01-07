@@ -258,10 +258,24 @@ nav a:hover {
 @media (min-width: 900px) {
     #projects-grid {
         grid-template-columns: repeat( 3, minmax(230px, 1fr) );
+    }
 }
 
 @media (max-width: 700px) {
     nav {
         justify-content: center;
+        height: 
+    }
+
+    nav a {
+        font-size: 2.8vw;
+        width: 15vw;
+        padding: 1.2vw 0px;
+        margin-right: 1.2vw;
+        margin-right: 1.2vw;
+    }
+
+    nav a:last-child {
+        margin-right: 0px;
     }
 }
