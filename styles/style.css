@@ -296,8 +296,10 @@ nav a:hover {
     grid-area: bottom;
 }
 
-
-
+/* so that when h4 is empty, it will still take up space */
+#letter-by-letter-display {
+    min-height: 20px;
+}
 
 
 @media (min-width: 900px) {
