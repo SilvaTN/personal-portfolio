@@ -31,6 +31,8 @@
     --contact-section-bg: rgb(255, 252, 82);
     /* --contact-section-bg: rgb(255, 136, 136); */
     --contact-section-text: rgb(59, 38, 119);
+
+    --hire-section-bg: rgba(255, 252, 82, 0.712);
   }
 
 body {
@@ -177,7 +179,8 @@ nav a:hover {
     font-family: 'Amatic SC', cursive;
     font-size: 22px;
     font-weight: bolder;
-    margin: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
     align-content: center;
     padding: 50px 20vw;
 }
@@ -258,6 +261,44 @@ nav a:hover {
     /* border: 1px solid red; */
 }
 
+#hire-section {
+    height: 250px;
+    background-color: var(--hire-section-bg);
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -8px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-areas: 
+        "top"
+        "middle"
+        "bottom";
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 0px;
+}
+
+.default-button {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+#hire-button {
+    grid-area: top;
+}
+
+.mid {
+    grid-area: middle;
+}
+
+.bottom {
+    grid-area: bottom;
+}
+
+
+
+
 
 @media (min-width: 900px) {
     #projects-grid {
@@ -268,7 +309,6 @@ nav a:hover {
 @media (max-width: 700px) {
     nav {
         justify-content: center;
-        height: 
     }
 
     nav a {
