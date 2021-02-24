@@ -1,0 +1,24 @@
+look at a website for reference and try to recreate it.
+
+
+Git & GitHub Branches Tutorial - Beginners https://www.youtube.com/watch?v=QV0kVNvkMxc 
+    Shows $ git push <remote> <branch> https://devconnected.com/how-to-push-git-branch-to-remote/
+
+
+follow this tutorial to make contact pop up https://www.youtube.com/watch?v=yS9OZyyY4TE
+
+
+when the buttons talk use speech bubbles. Observe these Night in the Woods bubbles https://www.youtube.com/watch?v=0ntxpOb5MGc
+
+
+below the Hire me and the Lower me buttons, have a "higher mi" button that plays a higher E every time you click on it (until it gets to the limit, then it restarts)
+
+when hire me is pressed, a message is displayed saying something like, "I have begun charging you for my services. So far you owe me $X" where X increases every 4 seconds. The button displays 'fire me' after you press it. Pressing 'fire me' stops the $ counter and displays the message, "That'll be $X. You have one day. This website will self-destruct in 5..4..3..2..1"
+
+lower button pressed (if it's not pressed within 10 seconds, it goes back to state 1):
+1st time: goes down and now says higher me
+2nd time: goes up and now says 'lower me' again
+3rd time: goes down and now says, 'okay, it's getting kind of annoying'
+4th time: stays down and now says, "stop it >:( "
+5th time: you lost your button privilledge
+a few seconds later a new button appears below it, saying "replacement button". when you press it, it, the original button says, "what's that new button doing?" When you press the replacement again, the original says, "Hey pal, I'm teaching this person a lesson. Buttons do very important work and we need to be respected." And the replacement says, "but we must abide by the button code. It doesn't matter how many times we are pushed-- what matters is that we're here to be pushed when we are needed." The other button says, "wow" then :') then "that's beautiful. Did you just come up with that?" and the replacement says, "...It's an adapted quote from Toy Story" and the original says, "Well, it's beautiful anyway. Thank you for reminding me why I became a button." Then the other button says, "Wait...you BECAME a button? What were you before?" and the original replies, "I was a wizard" and the replacement says, "And you gave up your magic to become a button?" and the original says, "I'm still magic." and the replacement says, "Then...could you turn ME into a witch?" and the original slowly goes "......." then says, "It's done! But you must be pushed one final time" then replacement button changes to "push me to turn me into a wizard" and if you push it, the replacement button disappears. Then a few seconds later, the original says, "Okay...not even a thank you? This is why I gave up my previous life..." And then the button becomes a button again that goes down and up no matter how many times you press it, except that every third time, the button message changes to "it is an honour and a privilledge to be pushed".

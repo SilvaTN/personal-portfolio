@@ -24,6 +24,7 @@ hireButton.onclick = function() {
         hireButton.innerHTML = "button works";
 
         letterByLetterDisplay.innerHTML = "";
+        // code source https://stackoverflow.com/questions/21855770/submit-button-disabled-until-another-button-clicked
         var message = 'Hello world';
         var index = 0;
         function displayLetter() {
