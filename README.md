@@ -1,1 +1,1 @@
-A portfolio page I made as part of a freeCodeCamp project
+A portfolio page I made as part of a freeCodeCamp project: https://silvatn.github.io/personal-portfolio/
