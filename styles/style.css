@@ -264,7 +264,7 @@ nav a:hover {
     float: right;
 }
 
-#github-text-div, #fcc-text-div {
+#text-div {
     display: block;
     margin-right: 20px;
 }
