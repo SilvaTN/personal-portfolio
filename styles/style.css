@@ -79,7 +79,7 @@ nav a:hover {
 
 #welcome-section {
     background-image: linear-gradient(to right, var(--welcome-left-bg) , var(--welcome-right-bg));
-    height: 300px;
+    height: 350px;
     margin: -8px -8px 0 -8px;
     display: flex;
     flex-direction: column;
@@ -111,6 +111,10 @@ nav a:hover {
     font-family: Monaco, "Courier New", monospace;
     width: 400px;
     margin-top: 10px;
+}
+
+#about-me a {
+    color: var(--welcome-about-me-color);
 }
 
 #projects {
@@ -209,7 +213,7 @@ nav a:hover {
     font-weight: bolder;
     margin: -8px;
     align-content: center;
-    padding: 50px 20vw;
+    padding: 50px 10vw;
 }
 
 #profile-section a {
@@ -293,6 +297,7 @@ nav a:hover {
     #plain-projects-grid {
         grid-template-columns: repeat( 3, minmax(230px, 1fr) );
     }
+    
 }
 
 @media (max-width: 700px) {
@@ -318,5 +323,15 @@ nav a:hover {
         width: auto;
         margin-right: 20px;
         margin-left: 20px;
+    }
+}
+
+@media (max-width: 650px) {
+    #profiles {
+        display: flex;
+        flex-direction: column;
+    }
+    .profile-container {
+        height: 50px;
     }
 }
