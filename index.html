@@ -1,5 +1,12 @@
 <!-- 'higher-buttons' branch has all the comments and possible ideas -->
 
+ <!-- 
+    1) Start with an about me section, saying your education and what languages/technologies you know.
+    2) Projects that the hiring manager knows what they are supposed to do and that demonstrates skills they want (eg if you apply for DC, you show them Batman drawings, not OCs): 1) bug tracker https://blog.hubstaff.com/best-bug-tracking-tools/ , 2) blog https://www.youtube.com/watch?v=XYIJBR7ZR1w  3) finance reporter
+    3) coding challenges (eg fizzbuzz, reverse a string) that show your algorithmic thinking. Also spend some time on the UI of that project to make it look cool.
+    Bonus section: technical writing - have a link to things you wrote e.g. on linkedin or your blog where you talk about things like why you prefer python’s X feature over Java’s X feature, or your journey as a software developer. IMO maybe I could do tutorials for myself so I don’t forget how things work.
+    4) Contact section
+ -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,19 +21,30 @@
 </head>
 <body>
     <nav id="navbar">
-        <a href="#welcome-section">Hello</a>
+        <a href="#welcome-section">Hello!</a>
         <a href="#projects">Work</a>
-        <a href="#profile-section">Profile</a>
+        <a id="nav-profile" href="#profile-section">Profile</a>
     </nav>
     <section id="welcome-section">
-        <h1>I do things.</h1>
-        <p>And also I create stuff.</p>
+        <h1>Tales de Norie</h1>
+        <p id="front-end-dev">Front-End Developer</p>
+        <p id="about-me">
+            Hi! I'm a self-taught front-end developer (soon to be a full stack MERN developer!) with a Bachelor of Science in Philosophy and Computer Science.
+        </p>
     </section>
     <section id="projects">
-        <div class="heading"><h2>My Projects</h2></div>
-        
-        <div id="projects-grid">
+        <div class="heading"><h2>React JS Projects</h2></div>
+        <div class="projects-grid" id="react-projects-grid">
+            <a href="https://silvatn.github.io/pure-guava/" target="_blank" class="project-tile">
+                <img src="images/pureGuavaScreenshot.png" alt="my guava product landing page screenshot"><p>Shopping List</p>
+            </a>
+            <a href="https://silvatn.github.io/our-fascinating-planet-tribute/index.html" target="_blank" class="project-tile">
+                <img src="images/tributeToOurFascinatingPlanet.png" alt="screenshot of my tribute page to our world"><p>Issue Tracker (in progress)</p>
+            </a>
+        </div>
 
+        <div class="heading"><h2>HTML and CSS Projects</h2></div>
+        <div class="projects-grid" id="plain-projects-grid">
             <a href="https://silvatn.github.io/pure-guava/" target="_blank" class="project-tile">
                 <img src="images/pureGuavaScreenshot.png" alt="my guava product landing page screenshot"><p>Pure Guava Products</p>
             </a>
@@ -42,15 +60,16 @@
             <a href="index.html" target="_blank" class="project-tile">
                 <img class="project-screenshot" src="images/portfolioScreenDump.png" alt="a screenshot of this very same page."><p>Portfolio</p>
             </a> 
-            <a href="https://soundcloud.com/partlytangible" target="_blank" class="project-tile">
+            <!-- <a href="https://soundcloud.com/partlytangible" target="_blank" class="project-tile">
                 <img class="project-screenshot" src="images/cloud.jpg" alt="SoundCloud logo, the cloud thingy." id="soundcloud-img"><p>Music</p>
-            </a> 
+            </a>  -->
         </div>
 
     </section>
 
     <section id="profile-section">
         
+        <span id="profiles">
         <div class="profile-container"><a href="https://www.freecodecamp.org/kind_coder" target="_blank" id="profile-link">
             <div class="img-col">
                 <img src="images/fcc_logo.png" alt="free code camp logo" id="fcc-logo">
@@ -69,15 +88,15 @@
             </div>
         </a></div>
         
-        <div class="profile-container" id="soundcloud-div"><a href="https://soundcloud.com/partlytangible" target="_blank" id="profile-link-3">
+        <!-- <div class="profile-container" id="soundcloud-div"><a href="https://soundcloud.com/partlytangible" target="_blank" id="profile-link-3">
             <div class="img-col">
                 <img src="images/soundcloud_logo.png" alt="soundcloud logo" id="soundcloud-logo">
             </div>
             <div class="text-col">
                 <h1>SoundCloud</h1>
             </div>
-        </a></div>
-
+        </a></div> -->
+        </span>
     </section>
 
     <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->

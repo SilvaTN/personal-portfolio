@@ -21,7 +21,9 @@
     /* --main-section-bg-color: #5cdb95; */
     --welcome-left-bg: #47424b;
     --welcome-right-bg: #413947;
-    --welcome-text-color: white;
+    --welcome-title-color: white;
+    --welcome-subtitle-color: rgb(255, 252, 102);
+    --welcome-about-me-color: #c7b7d3;
 
     --proj-cell-bg: rgb(245, 227, 149);
     --proj-cell-shadow: #888888a2;
@@ -42,7 +44,7 @@ nav {
     border-bottom: 1px solid var(--nav-border-color);
     position: fixed;
     top: 0px;
-    padding-right: 240px;
+    /* padding-right: 240px; */
     margin-left: -8px;
     display: flex;
     flex-wrap: wrap;
@@ -56,7 +58,9 @@ nav {
 nav a {
     padding: 11px 11px;
     text-align: center;
-    width: 90px;
+    /* width: 90px; */
+    padding-left: 20px;
+    padding-right: 20px;
     text-decoration: none;
     font-size: 20px;
     color: var(--nav-a-color);
@@ -64,7 +68,7 @@ nav a {
 }
 
 nav a:last-child {
-    margin-right: 40px;
+    margin-right: 45px;
 }
 
 nav a:hover {
@@ -75,24 +79,38 @@ nav a:hover {
 
 #welcome-section {
     background-image: linear-gradient(to right, var(--welcome-left-bg) , var(--welcome-right-bg));
-    height: 100vh;
+    height: 300px;
     margin: -8px -8px 0 -8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 80px;
 }
 
 #welcome-section h1 {
-    font-size: 70px;
-    color: var(--welcome-text-color);
+    font-size: 80px;
+    color: var(--welcome-title-color);
     font-family: 'Amatic SC', cursive;
-    margin: 0;
+    margin: 0px;
+    text-align: center;
 }
 
-#welcome-section p {
-    margin: 0;
+#front-end-dev {
+    display: block;
+    font-size: 20px;
+    color: var(--welcome-subtitle-color);
     font-family: 'Pangolin', cursive;
+    margin: 0px;
+    /* text-align: center; */
+}
+
+#about-me {
+    font-size: 15px;
+    color: var(--welcome-about-me-color);
+    font-family: Monaco, "Courier New", monospace;
+    width: 400px;
+    margin-top: 10px;
 }
 
 #projects {
@@ -103,13 +121,13 @@ nav a:hover {
 #projects > .heading {
     text-align: center;
     
-    font-size: 22px;
+    font-size: 23px;
     font-family: 'Amatic SC', cursive;
     text-decoration: underline;
     /* font-family: 'Indie Flower', cursive; */
 }
 
-#projects-grid {
+#react-projects-grid {
     /* background-color: blue; */
     display: grid;
     align-content: center;
@@ -121,7 +139,19 @@ nav a:hover {
     margin: 0 80px 70px 80px;
 }
 
-#projects-grid a {
+#plain-projects-grid {
+    /* background-color: blue; */
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat( auto-fit, minmax(230px, 1fr) );
+    column-gap: 20px;
+    row-gap: 20px;
+    margin: 0 80px 70px 80px;
+}
+
+.projects-grid a {
     display: flex;
     flex-direction: column;
     /* background-color: red; */
@@ -137,14 +167,14 @@ nav a:hover {
     color: var(--proj-cell-text);
 }
 
-#projects-grid img {
+.projects-grid img {
     object-fit: cover;
     width: 100%;
     height: auto;
     border-radius: 2% 2% 0% 0%;
 }
 
-#projects-grid p {
+.projects-grid p {
     text-align: center;
     margin: auto;
     padding-top: 8px;
@@ -152,7 +182,7 @@ nav a:hover {
     font-family: 'Pangolin', cursive;
 }
 
-#projects-grid a:hover {
+.projects-grid a:hover {
     text-decoration: underline;
     box-shadow: 9px 11px 3px var(--proj-cell-shadow);
     margin-top: -6px;
@@ -168,7 +198,7 @@ nav a:hover {
 
 /* NB: PROFILE NOT PROJECT */
 
-#profile-section {
+#profiles {
     background-color: var(--contact-section-bg);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -260,7 +290,7 @@ nav a:hover {
 
 
 @media (min-width: 900px) {
-    #projects-grid {
+    #plain-projects-grid {
         grid-template-columns: repeat( 3, minmax(230px, 1fr) );
     }
 }
@@ -272,14 +302,21 @@ nav a:hover {
     }
 
     nav a {
-        font-size: 3.2vw;
-        width: 15vw;
-        padding: 1.2vw 0px;
-        margin-right: 1.2vw;
+        font-size: min(5.2vw, 20px);
+        /* width: 15vw; */
+        /* padding: 1.2vw 0px; */
+        /* padding-right: 0px;
+        padding-left: 0px; */
         margin-right: 1.2vw;
     }
 
     nav a:last-child {
         margin-right: 0px;
+    }
+
+    #about-me {
+        width: auto;
+        margin-right: 20px;
+        margin-left: 20px;
     }
 }
