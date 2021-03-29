@@ -89,7 +89,7 @@ nav a:hover {
 #welcome-section h1 {
     font-size: 80px;
     color: var(--welcome-title-color);
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Amatic SC', Helvetica;
     margin: 60px 8px 0px 8px;
     text-align: center;
 }
@@ -98,7 +98,7 @@ nav a:hover {
     display: block;
     font-size: 20px;
     color: var(--welcome-subtitle-color);
-    font-family: 'Pangolin', cursive;
+    font-family: 'Pangolin', Helvetica;
     margin: 0px 8px;
     text-align: center;
 }
@@ -125,7 +125,7 @@ nav a:hover {
     text-align: center;
     
     font-size: 23px;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Amatic SC', Helvetica;
     text-decoration: underline;
     /* font-family: 'Indie Flower', cursive; */
 }
@@ -181,7 +181,7 @@ nav a:hover {
     text-align: center;
     margin: auto;
     padding: 8px 6px;
-    font-family: 'Pangolin', cursive;
+    font-family: 'Pangolin', Helvetica;
 }
 
 .projects-grid a:hover {
