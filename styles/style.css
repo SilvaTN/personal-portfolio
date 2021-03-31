@@ -201,25 +201,24 @@ nav a:hover {
 /* NB: PROFILE NOT PROJECT */
 
 #profiles {
+    display: flex;
+    /* grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); */
+    /* row-gap: 20px; */
+    /* align-content: center; */
+    padding: 50px 10vw;
+    margin: -8px;
     background-color: var(--contact-section-bg);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    /* column-gap: 0px; */
-    row-gap: 20px;
     font-family: 'Amatic SC', cursive;
     font-size: 22px;
     font-weight: bolder;
-    margin: -8px;
-    align-content: center;
-    padding: 50px 10vw;
 }
 
 #profile-section a {
-    /* width: max-content; */
+    display: flex;
+    width: max-content;
     /* margin: auto; */
     /* width: 200px; */
     /* background-color: rgba(0, 0, 255, 0.418); */
-    display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
@@ -227,8 +226,8 @@ nav a:hover {
 
 /* you want the profile to wrap around the a tag, not the other way round. So that you can adjust the margin and padding without hovering being active when it's too far from the profile link */
 .profile-container {
-    width: max-content;
-    width: 220px;
+    /* width: max-content; */
+    /* width: 220px; */
     height: 80px;
     margin: auto;
     display: flex;
@@ -236,13 +235,13 @@ nav a:hover {
     align-items: center;
 }
 
-#soundcloud-div .img-col {
+/* #soundcloud-div .img-col {
     margin-left: 15px;
 }
 
 #soundcloud-div .text-col {
     margin-right: 15px;
-}
+} */
 
 .img-col {
     max-width: 50px;
@@ -286,7 +285,8 @@ nav a:hover {
 
 .profile-container a:hover {
     padding-bottom: 10px;
-    padding-right: 10px;
+    /* padding-right: 10px; */
+    /* padding-left: -10px; */
     /* border: 1px solid red; */
 }
 
@@ -326,11 +326,10 @@ nav a:hover {
         font-size: 70px;
     }
     #profiles {
-        display: flex;
         flex-direction: column;
     }
     .profile-container {
-        height: 50px;
+        height: 70px;
     }
 }
 
