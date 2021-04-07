@@ -18,7 +18,6 @@
     --nav-a-hover-border: black;
     --nav-a-active-bg-color: #edf5e1;
 
-    /* --main-section-bg-color: #5cdb95; */
     --welcome-left-bg: #47424b;
     --welcome-right-bg: #413947;
     --welcome-title-color: white;
@@ -31,7 +30,6 @@
     --proj-cell-text-hover: rgb(59, 38, 119);
 
     --contact-section-bg: rgb(255, 252, 102);
-    /* --contact-section-bg: rgb(255, 136, 136); */
     --contact-section-text: rgb(59, 38, 119);
   }
 
@@ -116,22 +114,35 @@ nav a:hover {
     color: var(--welcome-about-me-color);
 }
 
+h2 {
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+#plain-projects h2 {
+    display: block;
+    margin-bottom: 0px;
+}
+
+h3 {
+    display: block;
+    margin-left: 0px;
+    margin-top: 0px;
+    text-decoration: none;
+}
+
 #projects {
     padding-top: 50px;
     padding-bottom: 90px;
 }
 
-#projects > .heading {
+.heading {
     text-align: center;
-    
     font-size: 23px;
     font-family: 'Amatic SC', Helvetica;
-    text-decoration: underline;
-    /* font-family: 'Indie Flower', cursive; */
 }
 
 #react-projects-grid {
-    /* background-color: blue; */
     display: grid;
     align-content: center;
     justify-content: center;
@@ -143,7 +154,6 @@ nav a:hover {
 }
 
 #plain-projects-grid {
-    /* background-color: blue; */
     display: grid;
     align-content: center;
     justify-content: center;
@@ -157,7 +167,6 @@ nav a:hover {
 .projects-grid a {
     display: flex;
     flex-direction: column;
-    /* background-color: red; */
     height: 100%;
     width: 100%;
     box-shadow: 3px 5px 1px var(--proj-cell-shadow);
@@ -197,7 +206,6 @@ nav a:hover {
 
 
 
-
 /* NB: PROFILE NOT PROJECT */
 
 #profiles {
@@ -208,7 +216,7 @@ nav a:hover {
     padding: 50px 10vw;
     margin: -8px;
     background-color: var(--contact-section-bg);
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Amatic SC', Helvetica;
     font-size: 22px;
     font-weight: bolder;
 }
@@ -235,26 +243,15 @@ nav a:hover {
     align-items: center;
 }
 
-/* #soundcloud-div .img-col {
-    margin-left: 15px;
-}
-
-#soundcloud-div .text-col {
-    margin-right: 15px;
-} */
-
 .img-col {
     max-width: 50px;
-    /* border: 1px solid red; */
 }
 
 .profile-container img {
     display: block;
     max-width: 100%;
     max-height: 100%;
-    margin-right: 0px;
-    /* border: 1px solid blue; */
-    
+    margin-right: 0px;    
 }
 
 #fcc-logo, #github-logo {
@@ -275,7 +272,10 @@ nav a:hover {
     color: var(--contact-section-text);
     /* text-decoration: underline;
     text-decoration-thickness: 1px; */
-    /* border: 1px solid black; */
+}
+
+.profile-container a {
+    transition: 0.3s;
 }
 
 .profile-container a:hover .text-col h1 {
@@ -292,13 +292,15 @@ nav a:hover {
 
 
 @media (min-width: 900px) {
+
     #plain-projects-grid {
         grid-template-columns: repeat( 3, minmax(230px, 1fr) );
     }
-    
+
 }
 
 @media (max-width: 700px) {
+
     nav {
         justify-content: center;
         /* height:  */
@@ -319,23 +321,30 @@ nav a:hover {
         margin-right: 20px;
         margin-left: 20px;
     }
+
 }
 
 @media (max-width: 650px) {
+
     #welcome-section h1 {
         font-size: 70px;
     }
+
     #profiles {
         flex-direction: column;
     }
+
     .profile-container {
         height: 70px;
     }
+
 }
 
 @media (max-width: 450px) {
+
     nav a {
         padding-right: 13px;
         padding-left: 13px;
     }
+
 }
