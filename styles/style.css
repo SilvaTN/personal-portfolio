@@ -275,10 +275,6 @@ h3 {
     text-decoration-thickness: 1px; */
 }
 
-.profile-container a {
-    transition: 0.3s;
-}
-
 .profile-container a:hover .text-col h1 {
     /* background-color: rgb(0, 140, 255); */
     color: rgb(0, 140, 255);
